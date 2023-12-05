@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>NASTAVA</title>
+  </head>
+  <style>
+    body {
+      background-color: #fff; /* Set the background color to #DDD8C4 */
+      margin: 0;
+      display: flex;
+      justify-content: flex-end;
+      margin: 0;
+    }
+
+    .menu-option {
+      text-decoration: none;
+      color: #fff;
+      font-size: 20px;
+      margin: 0 30px; /* Adjust spacing between menu options */
+      transition: color 0.3s;
+      font-family: "Glacial Indifference", sans-serif;
+    }
+
+    .menu-option:hover {
+      color: #100604; /* Change color on hover */
+    }
+
+    .banner {
+      position: absolute;
+      background-color: #f0a202; /* Banner color */
+      width: 100%; /* Full width */
+      height: 110px; /* Adjust the height */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: -1;
+    }
+    .banner2 {
+      position: absolute;
+      background-color: #f18805; /* Banner color */
+      width: 100%; /* Full width */
+      height: 45px; /* Adjust the height */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: -1;
+      top: 10%;
+    }
+
+    .logo {
+      position: absolute;
+      top: -90px;
+      left: 0;
+      margin: 10px;
+      width: auto;
+      height: 210px;
+    }
+
+    .buttons {
+      position: absolute;
+      top: 5px;
+      right: 30px; /*button position */
+    }
+
+    .login-button,
+    .signup-button {
+      width: 110px;
+      height: 40px;
+      font-size: 16px;
+      border: none;
+      border-radius: 30px;
+      margin: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .login-button {
+      background-color: #f18805;
+      color: #fff;
+      right: 5px;
+    }
+
+    .login-button:hover {
+      background-color: #100604;
+    }
+
+    .signup-button {
+      background-color: #d95d39;
+      color: #fff;
+      border: 2px dashed #fff;
+      right: 50px; /* Adjust this value to move the button more to the left */
+    }
+
+    .signup-button:hover {
+      background-color: #100604;
+    }
+
+    .english-tower {
+      position: absolute;
+      left: 440px;
+    }
+    .list1 ul {
+      text-decoration: none;
+      text-align: center;
+      list-style: none;
+      margin-top: 260px;
+      position: absolute;
+      left: 700px;
+      background-color: #69a297;
+      color: #fff;
+      border-radius: 30px;
+      line-height: 1.5;
+    }
+
+    .inspector-calls h2 {
+      position: absolute;
+      margin-top: 13%;
+      left: 10px;
+      background-color: #d95d39;
+      width: 550px;
+      height: 440px;
+      padding-top: 2%;
+      text-align: center;
+      color: #fff;
+    }
+    .inspector-calls img {
+      position: absolute;
+      margin-top: 19%;
+      left: 10%;
+      width: 300px;
+      height: 360px;
+    }
+    .inspector-calls a {
+      position: absolute;
+      text-align: center;
+      margin-top: 32%;
+      left: 35%;
+      width: 100px;
+      height: 20px;
+      border: 15px dashed #100604;
+      background-color: white;
+      padding: 50px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      text-decoration: none;
+      color: #000;
+    }
+    .inspector-calls a:hover {
+      background-color: #f0a202;
+      color: #fff;
+    }
+
+    .christmas-carol h2 {
+      position: absolute;
+      margin-top: 35%;
+      left: 800px;
+      background-color: #d95d39;
+      width: 550px;
+      height: 440px;
+      padding-top: 2%;
+      text-align: center;
+      color: #fff;
+      /* border: 5px dashed #202c59; */
+    }
+    .christmas-carol img {
+      position: absolute;
+      margin-top: 41%;
+      left: 70%;
+      width: 300px;
+      height: 360px;
+    }
+    .christmas-carol a {
+      position: absolute;
+      text-align: center;
+      margin-top: 54%;
+      left: 45%;
+      width: 100px;
+      height: 20px;
+      border: 15px dashed #100604;
+      background-color: white;
+      padding: 50px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      text-decoration: none;
+      color: #000;
+    }
+    .christmas-carol a:hover {
+      background-color: #f0a202;
+      color: #fff;
+    }
+
+    .macbeth h2 {
+      position: absolute;
+      margin-top: 60%;
+      left: 10px;
+      background-color: #d95d39;
+      width: 550px;
+      height: 440px;
+      padding-top: 2%;
+      text-align: center;
+      color: #fff;
+    }
+
+    .macbeth img {
+      position: absolute;
+      margin-top: 66%;
+      left: 10%;
+      width: 300px;
+      height: 360px;
+    }
+    .macbeth a {
+      position: absolute;
+      text-align: center;
+      margin-top: 84%;
+      left: 35%;
+      width: 100px;
+      height: 20px;
+      border: 15px dashed #100604;
+      background-color: white;
+      padding: 50px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      text-decoration: none;
+      color: #000;
+    }
+    .macbeth a:hover {
+      background-color: #f0a202;
+      color: #fff;
+    }
+
+    .frankenstein h2 {
+      position: absolute;
+      margin-top: 75%;
+      left: 800px;
+      background-color: #d95d39;
+      width: 550px;
+      height: 440px;
+      padding-top: 2%;
+      text-align: center;
+      color: #fff;
+      /* border: 5px dashed #202c59; */
+    }
+    .frankenstein img {
+      position: absolute;
+      margin-top: 81%;
+      left: 70%;
+      width: 300px;
+      height: 360px;
+    }
+    .frankenstein a {
+      position: absolute;
+      text-align: center;
+      margin-top: 98%;
+      left: 45%;
+      width: 100px;
+      height: 20px;
+      border: 15px dashed #100604;
+      background-color: white;
+      padding: 50px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      text-decoration: none;
+      color: #000;
+    }
+    .frankenstein a:hover {
+      background-color: #f0a202;
+      color: #fff;
+    }
+    .exam-papers h2 {
+      position: absolute;
+      text-align: center;
+      margin-top: 117%;
+      width: 1295px;
+      height: 650px;
+      padding: 2%;
+      left: 0px;
+      background-color: #202059;
+      color: #fff;
+    }
+    .exam-papers h3 {
+      position: absolute;
+      text-align: center;
+      margin-top: 130%;
+      left: 20%;
+      color: #fff;
+      font-size: 20px;
+    }
+    .exam-papers h4 {
+      position: absolute;
+      text-align: center;
+      margin-top: 130%;
+      right: 20%;
+      color: #fff;
+      font-size: 20px;
+    }
+
+    .exam-papers1 ul {
+      position: absolute;
+      margin-top: 168%;
+      left: 27%;
+      text-align: center;
+      transform: translate(-50%,-50%);
+      z-index: 10;
+      background-color: #f18805;
+      line-height: 50px;
+      padding: 2%;
+      list-style: none;
+      font-size: 17px;
+      border: 4px dashed;
+    }
+    .exam-papers1 ul li a{
+      text-decoration: none;
+      color: #fff;
+    }
+    .exam-papers1 ul li a:hover{
+      color: #040f0f;
+    }
+    .exam-papers2 ul {
+      position: absolute;
+      margin-top: 168%;
+      left: 77%;
+      text-align: center;
+      transform: translate(-50%,-50%);
+      z-index: 10;
+      background-color: #f18805;
+      line-height: 50px;
+      padding: 2%;
+      list-style: none;
+      font-size: 17px;
+      border: 4px dashed;
+    }
+    .exam-papers2 ul li a{
+      text-decoration: none;
+      color: #fff;
+    }
+    .exam-papers2 ul li a:hover{
+      color: #040f0f;
+    }
+    
+    .paper1 {
+      position: absolute;
+      margin-top: 131%;
+      width: 89%;
+      height: 90%;
+      left: -60px;
+      transform: rotate(10deg);
+    }
+    .exam-paper2 {
+      position: absolute;
+      list-style: none;
+      background-color: #d95d39;
+      margin-top: 159%;
+      text-align: center;
+      height: 185px;
+      width: 250px;
+      left: 65%;
+      padding: 18px;
+      line-height: 290%;
+      /* border: 4px dashed white; */
+      cursor: pointer;
+    }
+    .exam-paper2 ul li a {
+      color: #100604;
+    }
+
+    .exam-paper2 ul li a:hover {
+      color: #fff;
+    }
+    .revision-vids h2 {
+      position: absolute;
+      background-color: #f0a202;
+      text-align: center;
+      margin-top: 180%;
+      left: 5%;
+      padding: 2%;
+      width: 87%;
+      height: 80%;
+      border: dashed 6px black;
+    }
+    .revision-vids1 a {
+      position: absolute;
+      text-decoration: none;
+      margin-top: 203%;
+      left: 7%;
+      color: white;
+      font-size: 20px;
+    }
+    .revision-vids1 a:hover {
+      color: #100604;
+    }
+    .lang1{
+      position: absolute;
+      left: 17%;
+      top: 355%;
+      transform: translate(-50%,-50%);
+      z-index: 10;
+      width: 280px;
+      height: 210px;
+    }
+    .lang2{
+      position: absolute;
+      left: 34%;
+      top: 393%;
+      transform: translate(-50%,-50%);
+      z-index: 10;
+      width: 280px;
+      height: 210px;
+    }
+    .lit1{
+      position: absolute;
+      left: 47%;
+      top: 355%;
+      transform: translate(-50%,-50%);
+      z-index: 10;
+      width: 280px;
+      height: 210px;
+    }
+    .lit2{
+      position: absolute;
+      left: 65.5%;
+      top: 393%;
+      transform: translate(-50%,-50%);
+      z-index: 10;
+      width: 280px;
+      height: 210px;
+    }
+
+
+
+
+
+
+
+
+
+    .revision-vids2 a {
+      position: absolute;
+      text-decoration: none;
+      margin-top: 203%;
+      left: 38%;
+      color: white;
+      font-size: 20px;
+    }
+    .revision-vids2 a:hover {
+      color: #100604;
+    }
+    .revision-vids3 a {
+      position: absolute;
+      text-decoration: none;
+      margin-top: 223%;
+      left: 24%;
+      color: white;
+      font-size: 20px;
+    }
+    .revision-vids3 a:hover {
+      color: #100604;
+    }
+    .revision-vids4 a {
+      position: absolute;
+      text-decoration: none;
+      margin-top: 203%;
+      left: 68%;
+      color: white;
+      font-size: 20px;
+    }
+    .revision-vids4 a:hover {
+      color: #100604;
+    }
+    .revision-vids5 a {
+      position: absolute;
+      text-decoration: none;
+      margin-top: 223%;
+      left: 56%;
+      color: white;
+      font-size: 20px;
+    }
+    .revision-vids5 a:hover {
+      color: #100604;
+    }
+    .end ul {
+      position: absolute;
+      color: #fff;
+      line-height: 150%;
+      background-color: #f18805;
+      width: 100%;
+      height: 70px;
+      list-style: none;
+      margin-top: 240%;
+      left: 0px;
+      padding: 1%;
+    }
+    .buttons3 {
+      position: absolute;
+      top: 430%;
+      right: 30px; /*button position */
+    }
+    .contact,
+    .about {
+      width: 110px;
+      height: 40px;
+      font-size: 16px;
+      border: none;
+      border-radius: 30px;
+      margin: 20px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .contact {
+      background-color: #d95d39;
+      color: #fff;
+      right: 5px;
+    }
+
+    .contact:hover {
+      background-color: #040f0f;
+    }
+
+    .about {
+      background-color: #d95d39;
+      color: #fff;
+      right: 50px; /* Adjust this value to move the button more to the left */
+    }
+
+    .about:hover {
+      background-color: #040f0f;
+    }
+   
+  </style>
+  <body>
+    <div class="banner"></div>
+    <div class="banner2">
+      <a href="english.html" class="menu-option">English</a>
+      <a href="Maths.html" class="menu-option">Mathematics</a>
+      <a href="../Biology/Webpage3.html" class="menu-option">Biology</a>
+      <a href="../Chemistry/ChemWebpage.html" class="menu-option">Chemistry</a>
+      <a href="../Physics/UpdatesPhysWebpage.html" class="menu-option">Physics</a>
+      <a href="about.html" class="menu-option">About</a>
+    </div>
+    <div class="buttons">
+      <button class="signup-button">Sign Up</button>
+      <button class="login-button">Log In</button>
+    </div>
+    <div class="exam-papers">
+      <h2>EXAM PAPERS</h2>
+      <h3>PAPER 1</h3>
+      <h4>PAPER 2</h4>
+    </div>
+    <div class="exam-papers1">
+      <ul>
+        <li><a href="paper-1-knowledge-organiser.docx">Paper 1 Knowledge Organiser</a>
+        <li><a href="June 2022 QP.PDF">Paper 1 Question Paper June 2022</a></li>
+        <li><a href="June 2022 MS.PDF">Paper 1 Mark Scheme June 2022</a></li>
+      </ul>
+    </div>
+    <div class="exam-papers2">
+      <ul>
+        <li><a href="AQA-Paper2-QP-JUN22.PDF">Paper 2 Question Paper June 2022</a></li>
+        <li><a href="AQA-Paper2-MS-JUN22.PDF">Paper 2 Mark Scheme June 2022</a></li>
+      </ul>
+    </div>
+
+
+    <img class="paper1" src="paper1.png" alt="exam checklist" />
+    <!-- <img class="paper2" src="paper2.png" alt="exam papers">  -->
+    <img class="logo" src="Logo.svg" alt="Your Logo" />
+    <img class ="lang1" src="lang1.jpg" alt="video thumbnail">
+    <img class="lang2" src="lang2.jpg" alt="video thumnail">
+    <img class="lit1" src="lit1.webp" alt="video thumbnail">
+    <img class="lit2" src="lit2.webp" alt="video thumbnail">
+
+    <div class="revision-vids">
+      <h2>Revision Videos</h2>
+    </div>
+
+    <div class="revision-vids1">
+      <a href="https://youtu.be/hMhQIX9DCcQ?si=pA8PMkTZVomo-aaJ"
+        >AQA English Language Paper 1</a
+      >
+      >
+    </div>
+    <div class="revision-vids2">
+      <a href="https://youtu.be/gzsKbudx5HM?si=VMTh4RdkNqQ36lbM"
+        >AQA English Literature Paper 1</a
+      >
+    </div>
+    <div class="revision-vids3">
+      <a href="https://youtu.be/yKZ_Tr2Y-CE?si=eK9EISnOxsKuCHZV"
+        >AQA English Language Paper 2</a
+      >
+    </div>
+    <div class="revision-vids4">
+      <a href="https://youtu.be/u-oe8bwI5t0?si=pgCwIH4EaJhTMYgj"
+        >English Literature Exam Paper Walkthrough</a
+      >
+    </div>
+    <div class="revision-vids5">
+      <a href="https://youtu.be/lPImUVFna3Y?si=5V36lIjkFT4HNVo0"
+        >AQA English Literature Paper 2</a
+      >
+    </div>
+
+    <div class="inspector-calls">
+      <h2>AN INSPECTOR CALLS</h2>
+      <a
+        href="https://genius.com/J-b-priestley-an-inspector-calls-all-acts-123-annotated"
+        >Learn More</a
+      >
+      >
+      <img src="inspector-calls.jpg" alt="dark picture of man in hat" />
+    </div>
+
+    <div class="christmas-carol">
+      <h2>CHRISTMAS CAROL</h2>
+      <a href="https://www.sparknotes.com/lit/christmascarol/">Learn More</a>>
+      <img
+        src="christmas-carol.jpg"
+        alt="buildings with blue background and stars with a man"
+      />
+    </div>
+
+    <div class="macbeth">
+      <h2>MACBETH</h2>
+      <a href="https://www.owleyes.org/text/macbeth">Learn More</a>>
+      <img src="macbeth.jpg" alt="red book with sword through crown" />
+    </div>
+    <div class="frankenstein">
+      <h2>FRANKENSTEIN</h2>
+      <a href="https://www.owleyes.org/text/frankenstein">Learn More</a>>
+      <img src="frankenstein.jpg" alt="dark background with lightning strike" />
+    </div>
+    <div class="buttons3">
+      <button class="contact">Contact</button>
+      <button class="about">About</button>
+      <button class="about">Collaborate</button>
+    </div>
+    <div class="end">
+      <ul>
+        <li>TERMS AND CONDITIONS</li>
+        <li>PRIVACY POLICY</li>
+        <li>©️ NASTAVA LEARNING & RESOURCES</li>
+      </ul>
+    </div>
+  </body>
+</html>
