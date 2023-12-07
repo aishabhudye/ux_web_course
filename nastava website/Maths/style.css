@@ -1,0 +1,464 @@
+body {
+    background-color: #FFFF; /* Set the background color to #DDD8C4 */
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.banner {
+    position: absolute;
+    background-color: #F0A202; /* Banner color */
+    width: 100%; /* Full width */
+    height: 110px; /* Adjust the height */
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    z-index: -1;
+}
+
+.banner2 {
+    position: absolute;
+    background-color: #F18805; /* Banner color */
+    width: 100%; /* Full width */
+    height: 45px; /* Adjust the height */
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    z-index: 1;
+    top: 8%;
+}
+
+.banner3 {
+    position: absolute;
+    background-color: #F18805; /* Banner color */
+    width: 100%; /* Full width */
+    height: 700px; /* Adjust the height */
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    z-index: -1;
+    top: 110%;
+}
+
+.banner4 {
+    position: absolute;
+    background-color: #d95d39; /* Banner color */
+    width: 1400px; /* Full width */
+    height: 700px; /* Adjust the height */
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    z-index: -1;
+    top: 235%;
+    left: 20%;
+}
+
+.banner5 {
+    position: absolute;
+    background-color: #f18805; /* Banner color */
+    width: 100%; /* Full width */
+    height: 120px; /* Adjust the height */
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    z-index: -1;
+    top: 320%;
+    font-size: 16px;
+    
+}
+.banner6 {
+    position: absolute;
+    background-color: #FFF; /* Banner color */
+    width: 1000px; /* Full width */
+    height: 500px; /* Adjust the height */
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    z-index: -1;
+    top: 245%;
+    left: 5%;
+    box-shadow: 0 0 0 10px black, inset 0 0 0 10px white; /* Adjust the box-shadow values as needed */
+    margin: 20px; /* Adjust the margin as needed */
+    vertical-align: auto;
+    font-size: 24px;
+    font-family: 'Glacial Indifference', sans-serif;
+    
+    
+    
+}
+
+.sticker {
+    position: absolute;
+    background-color: #f18805; /* Banner color */
+    width: 700px; /* Full width */
+    height: 80px; /* Adjust the height */
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    z-index: -1;
+    top: 242%;
+    left: 14%;
+    color: #000;
+    font-size: 28px;
+    font-weight: bold;
+
+}
+
+
+
+.menu-option {
+    text-decoration:none;
+    color: #fff;
+    font-size: 20px;
+    margin: 0 30px; /* Adjust spacing between menu options */
+    transition: color 0.3s;
+    font-family: 'Glacial Indifference', sans-serif;
+}
+
+.menu-option:hover {
+    color: #000; /* Change color on hover */
+}
+
+
+
+.logo {
+    position: absolute;
+    top: -60px;
+    left: 0;
+    margin: 10px;
+    width: auto;
+    height: 190px;
+}
+
+
+.buttons {
+position: absolute;
+top: 18px;
+right: 30px; /*button position */
+}
+
+.login-button, .signup-button {
+width: 110px;
+height: 40px;
+font-size: 16px;
+border: none;
+border-radius: 30px;
+margin: 10px;
+cursor: pointer;
+transition: background-color 0.3s;
+}
+
+.login-button {
+background-color: #F18805;
+color: #fff;
+right: 5px;
+}
+
+.login-button:hover {
+background-color: #e64a19;
+}
+
+.signup-button {
+background-color: #D95D39;
+color: #fff;
+border: 2px dashed #fff;
+right: 50px; /* Adjust this value to move the button more to the left */
+}
+
+
+.signup-button:hover {
+background-color: #e64a19;
+}
+
+
+
+.centered-image {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    width: 1500px;
+    height: 1500px;
+}
+
+.book-image {
+    position: absolute;
+    top: 30%;
+    left: 27%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 400px;
+    z-index: -1;
+    
+}
+
+.trig-image {
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    width: 500px; 
+    
+
+}
+
+
+.mcq-image {
+    position: absolute;
+    top: 105%;
+    left: 22%;
+    transform: translate(-50%, -50%);
+    width: 600px; 
+    z-index: 1;
+
+}
+
+.trig2-image {
+    position: absolute;
+    top: 270%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+    width: 700px;
+    
+
+}
+
+.resources-image {
+    position: absolute;
+    top: 195%;
+    left: 5%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    height: 800px;
+    
+
+}
+
+.resources-image2 {
+    position: absolute;
+    top: 106%;
+    left: 95%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    height: 800px;
+    
+
+}
+
+.pastpapers-image {
+    position: absolute;
+    top: 142%;
+    left: 74%;
+    transform: translate(-50%, -50%);
+    width: 600px; 
+    z-index: 1;
+}
+
+.textbook-image {
+    position: absolute;
+    top: 175%;
+    left: 22%;
+    transform: translate(-50%, -50%);
+    width: 600px; 
+    z-index: 1;
+
+}
+
+.video-image {
+    position: absolute;
+    top: 210%;
+    left: 74%;
+    transform: translate(-50%, -50%);
+    width: 500px; 
+    z-index: 1;
+
+}
+
+.section-square {
+    border-radius: 0px;
+    padding: 20px;
+    color: #f0a202;
+    margin: 20px auto;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.section-square:hover {
+    background-color: #202c59;
+}
+
+.oblong-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #202c59;
+    color: #fff;
+    border-radius: 30px; /* Increase border-radius for oblong shape */
+    text-decoration: none;
+    transition: background-color 0.3s;
+    border: 2px dashed #fff;
+    cursor: pointer;
+    
+}
+
+
+.section1 {
+    position: absolute;
+    top: 90%; /* Adjust the top value to move it down */
+    left: 49%; /* To center horizontally */
+    transform: translateX(-50%);
+    width: 1300px;
+    height: 250px;
+    background-color: #f0a202;
+    color: black;
+    font-family: 'Glacial Indifference', sans-serif;
+    
+}
+
+.section1 h2 {
+    position: absolute;
+    font-size: 22px;
+    top: 5%;
+    left: 50%;
+}
+
+
+.section1 a.oblong-button {
+    position: absolute;
+    top: 80%;
+    left: 55%;
+
+}
+
+.section1 p {
+    position: absolute;
+    font-size: 20px;
+    top: 15%;
+    left: 33%;
+
+}
+
+
+
+.section2 {
+    position: absolute;
+    top: 125%; /* Adjust the top value to move it down */
+    left: 49%;
+    transform: translateX(-50%);
+    width: 1300px;
+    height: 250px;
+    background-color: #f0a202;
+    color: black;
+    font-family: 'Glacial Indifference', sans-serif; 
+}
+
+.section2 h2 {
+    position: absolute;
+    font-size: 22px;
+    top: 5%;
+    left: 30%;
+}
+
+.section2 a.oblong-button {
+    position: absolute;
+    top: 80%;
+    left: 30%;
+
+}
+
+.section2 p {
+    position: absolute;
+    font-size: 20px;
+    top: 15%;
+    left: 20%;
+
+}
+
+.section3 {
+    position: absolute;
+    top: 160%; /* Adjust the top value to move it down */
+    left: 49%;
+    transform: translateX(-50%);
+    width: 1300px;
+    height: 250px;
+    background-color: #f0a202;
+    color: black;
+    font-family: 'Glacial Indifference', sans-serif;
+    
+}
+
+.section3 h2 {
+    position: absolute;
+    font-size: 22px;
+    top: 5%;
+    left: 55%;
+}
+
+.section3 a.oblong-button {
+    position: absolute;
+    top: 80%;
+    left: 55%;
+
+}
+
+.section3 p {
+    position: absolute;
+    font-size: 20px;
+    top: 15%;
+    left: 35%;
+
+}
+
+.section4 {
+    position: absolute;
+    top: 195%; /* Adjust the top value to move it down */
+    left: 49%;
+    transform: translateX(-50%);
+    width: 1300px;
+    height: 250px;
+    background-color: #f0a202;
+    color: black;
+    font-family: 'Glacial Indifference', sans-serif;
+    
+}
+
+.section4 h2 {
+    position: absolute;
+    font-size: 22px;
+    top: 5%;
+    left: 30%;
+}
+
+.section4 a.oblong-button {
+    position: absolute;
+    top: 80%;
+    left: 31%;
+
+}
+
+.section4 p {
+    position: absolute;
+    font-size: 20px;
+    top: 15%;
+    left: 20%;
+
+}
+
+.resources-text {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.resources-text p {
+    font-family: 'Glacial Indifference', sans-serif;
+    font-size: 22px;
+}
+
+
+
+ 
+
+
+
